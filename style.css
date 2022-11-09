@@ -1,0 +1,103 @@
+body {
+    margin: 0px;
+    height: 1000vh;
+}
+:root {
+    --a-text-color: black;
+    --purple-color: #AF5D63;
+    --black-color: #303030;
+
+
+}
+.displayflex {
+    display:flex;
+}
+#navigationbar {
+    height: 7.5vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--purple-color);
+    border-radius: 0 0 5px 5px;
+    position: sticky;
+    top: 0px;
+}
+.hoverbackground {
+    height: 7.5vh;
+    display: flex;
+    align-items: center;
+}
+.hometooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+.hometooltip .hometooltiptext {
+    visibility: hidden;
+    background-color: var(--black-color);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 9.5px;
+    font-size: 1rem;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    left: 105%;
+}
+
+.hometooltip:hover .hometooltiptext {
+    visibility: visible;
+    animation: fadeIn 1.5s;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+.contacttooltip .contacttooltiptext {
+    visibility: hidden;
+    background-color: var(--black-color);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 9.5px;
+    font-size: 1rem;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 105%;
+}
+.contacttooltip:hover .contacttooltiptext {
+    visibility: visible;
+    animation: fadeIn 1.5s;
+}
+
+.contacttooltip:hover {
+    animation: fadeIn 1.5s;
+}
+.contacttooltip {
+    position: relative;
+    display: inline-block;
+}
+.contacttooltip {
+    display: flex;
+    flex-direction: row-reverse;
+}
+a:link {
+    color: var(--black-color);
+}
+
+a:hover {
+    color: var(--black-color);
+}
+
+a:active {
+    color: var(--black-color);
+}
+a:visited {
+    color: var(--black-color);
+}
+.sidemargin {
+    margin: 0px 8px;
+}
